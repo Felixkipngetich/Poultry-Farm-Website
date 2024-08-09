@@ -1,0 +1,869 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;1,500&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Ubuntu" sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: hsl(0, 7%, 91%);
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 1380px;
+}
+
+.top_nav {
+    padding: 6px;
+    background-color: #e74c3c;
+}
+
+.header {
+    position: fixed;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 1380px;
+}
+
+.header .top_nav .left li {
+    list-style: none;
+    display: inline-block;
+    margin-right: 20px;
+    margin-left: 10px;
+}
+
+.header .top_nav .left li a {
+    text-decoration: none;
+    color: white;
+    transition: .5s;
+}
+
+.header .top_nav .left li a:hover {
+    text-decoration: none;
+    color: greenyellow;
+}
+
+.header .top_nav {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header .top_nav .right {
+    width: 20%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.header .top_nav .right i {
+    color:  white;
+    font-size: 18px;
+    transition: .5s;
+}
+
+.header .top_nav .right i:hover {
+    color:  yellowgreen;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.header .lower_nav {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    background-color: white;
+    height: 80px;
+}
+
+.header .lower_nav .logo {
+    background-image: url(images/logo.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 80px;
+    width: 80px;
+    border-radius: 40px;
+    margin-left: 50px;
+}
+
+.header .lower_nav .menu {
+    width: 50%;
+}
+
+.header .lower_nav .menu li {
+    list-style: none;
+    display: inline-block;
+    margin-right: 15px;
+    margin-left: 15px;
+}
+
+.header .lower_nav .menu li a {
+    text-decoration: none;
+    color: black;
+    transition: .5s;
+}
+
+.header .lower_nav .menu li a:hover {
+    text-decoration: underline;
+}
+
+.header .lower_nav .menu-btn {
+    display: none;
+}
+
+.header .lower_nav .phone {
+    background-color: greenyellow;
+    width: 20%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+}
+.header .lower_nav .phone a {
+    text-decoration: none;
+    color: black;
+    font-size: 22px;
+    letter-spacing: 2px;
+    transition: .5s;
+}
+
+.header .lower_nav .phone a:hover {
+    text-decoration: underline;
+}
+
+/*home styling*/
+.home {
+    padding-top: 150px;
+    height: 90vh;
+    background-image: url(images/farmimage5.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.home .content,
+.protection_div .content,
+.our_farm .content,
+.bottom .content,
+footer .content {
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.home .content h2, 
+.home .content h3 {
+    color: #bf1a1a;
+    font-size: 48px;
+    word-spacing: 2px;
+}
+
+.home .content p {
+    color: hwb(0 10% 42%);
+    font-size: 24px;
+    word-spacing: 3px;
+    margin-top: 30px;
+    font-weight: 400;
+}
+
+.home .content .btn {
+    margin-top: 50px;
+}
+
+.home .content .btn a {
+    padding: 15px 10px 15px 10px;
+    text-align: center;
+    text-decoration: none;
+    background-color: goldenrod;
+    color: white;
+    font-size: 18px;
+    transition: .5s;
+    border: 1px white solid;
+    border-radius: 6px;
+    font-weight: 500;
+}
+
+.home .content .btn a:hover {
+    background: none;
+    color: white;
+}
+
+/*protection styling*/
+.protection_div .content {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.protection_div .content .left {
+    padding: 30px 0px 30px 0px;
+    width: 70%;
+}
+.protection_div .content .left h4 {
+    color: black;
+    font-size: 32px;
+}
+
+.protection_div .content .left hr {
+    width: 20%;
+    font-weight: 700;
+    height: 3px;
+    background: black;
+    margin-top: 20px;
+}
+
+.protection_div .content .left p {
+    font-size: 18px;
+    margin-top: 20px;
+}
+
+.protection_div .content .left .btn {
+    margin-top: 50px;
+}
+.protection_div .content .left .btn a {
+    padding: 10px 10px 10px 10px;
+    text-align: center;
+    text-decoration: none;
+    background-color: goldenrod;
+    color: white;
+    font-size: 18px;
+    transition: .5s;
+    border: 1px black solid;
+    border-radius: 6px;
+    font-weight: 500;
+}
+
+.protection_div .content .left .btn a:hover {
+    background:  none;
+    color: black;
+}
+
+.protection_div .content .right {
+    padding: 30px 0px ;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.protection_div .right .right_items {
+    padding: 12px;
+    margin: 6px;
+    width: 90%;
+    transition: .7s;
+    box-shadow: 1px silver;
+    border-radius: 6px;
+}
+
+.protection_div .right .right_items p {
+    font-size: 18px;
+    font-weight: 400;
+}
+
+.protection_div .right .right_items p i {
+    margin-right: 10px;
+}
+
+.protection_div .right .right_items:hover {
+    background-color: goldenrod;
+    cursor: pointer;
+    color: white;
+}
+
+/*our farm*/
+.our_farm .content  {
+    padding-top: 50px;
+    padding-bottom: 30px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.our_farm .content .item {
+    width: 30%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    margin: 30px 10px 10px 10px;
+}
+
+.our_farm .content .item i{
+    font-size: 40px;
+    margin-right: 12px;
+    color: green;
+}
+
+/*bottom div styling*/
+
+.bottom {
+    padding-top: 20px;
+    height: 55vh;
+    background-color: black;
+    background-image: url(images/farmimage4.jfif);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+}
+
+.bottom .content h2 {
+    color: white;
+    font-size: 32px;
+    margin-top: 100px;
+}
+
+.bottom .content p {
+    color: white;
+    margin-top: 30px;
+    font-size: 18px;
+    text-align: center;
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.bottom .content .btn{
+    margin-top: 50px;
+}
+.bottom .content .btn a {
+    padding: 10px 10px 10px 10px;
+    text-align: center;
+    text-decoration: none;
+    background-color: goldenrod;
+    color: white;
+    font-size: 18px;
+    transition: .5s;
+    border: 1px white solid;
+    border-radius: 6px;
+    font-weight: 500;
+}
+
+.bottom .content .btn a:hover {
+    background: none;
+}
+
+/*footer styling*/
+footer {
+    background-color: #e67e22;
+    padding: 30px 0 20px 0;
+}
+footer .content {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: stretch;
+    justify-content: space-around;
+}
+
+footer .content .logo2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+   
+}
+
+footer .content .logo {
+    background-image: url(images/logo.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 80px;
+    width: 80px;
+    border-radius: 40px;
+    margin-left: 50px;   
+}
+
+footer a {
+    text-decoration: none;
+}
+footer .content .logo2 .text  {
+    text-align: center;
+    color: white;
+}
+
+footer .content .logo2 .text p {
+    margin-top: 10px;
+}
+
+footer .content .logo2 p {
+    color: white;
+    margin-top: 10px;
+}
+
+
+
+footer .contacts h4 ,
+footer .social_media h4,
+footer .message_us h4{
+    color: white;
+    font-size: 18px;
+}
+
+footer .contacts p, footer .social_media p, footer .message_us p,
+footer .contacts a, footer .social_media a {
+    color: white;
+    font-size: 16px;
+    margin-top: 10px;
+    transition: all 0.5s;
+}
+
+footer .contacts a:hover, footer .social_media a:hover {
+    text-decoration: underline;
+    color: yellowgreen;
+}
+
+footer .message_us input {
+    width: 100%;
+    height: 28px;
+    font-size: 16px;
+    margin-top: 10px;
+    border: 1.3px solid white;
+    border-radius: 6px;
+}
+
+footer .message_us .btn{
+    margin-top: 20px;
+}
+footer .message_us .btn a {
+    padding: 7px 10px 7px 10px;
+    text-align: center;
+    text-decoration: none;
+    background-color: goldenrod;
+    color: white;
+    font-size: 14px;
+    transition: .5s;
+    border: 1px white solid;
+    border-radius: 6px;
+}
+
+footer .message_us .btn a:hover {
+    background: none;
+}
+.footer_div p {
+    text-align: center;
+    background-color: #7c410e;
+    color: white;
+}
+
+
+.footer_div p a {
+    color: lawngreen;
+    transition: 0.6s;
+    text-decoration: none;
+}
+
+.footer_div p a:hover {
+    color: lawngreen;
+    text-decoration: underline;
+}
+
+/*responsive styling*/
+ /*tablet view*/
+@media (min-width: 768px) and (max-width: 1024px) {
+
+    .header .top_nav .left li a {
+        font-size: 12px;
+    }
+
+    .header .top_nav .right i {
+        color:  white;
+        font-size: 14px;
+        transition: .5s;
+    }
+
+    .header .lower_nav .logo {
+        background-image: url(images/logo.jpg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 70px;
+        width: 70px;
+        border-radius: 35px;
+        margin-left: 30px;
+    }
+    
+    .header .lower_nav .menu {
+        width: 60%;
+    }
+    
+    .header .lower_nav .menu li {
+        list-style: none;
+        display: inline-block;
+        margin-right: 16px;
+        margin-left: 12px;
+    }
+    
+    .header .lower_nav .menu li a {
+        font-size: 12px;
+    }
+
+    .header .lower_nav .phone {
+        width: 30%;
+    }
+    .header .lower_nav .phone a {
+        font-size: 20px;
+    }
+
+    .home .content h2, 
+    .home .content h3 {
+    font-size: 36px;
+    word-spacing: 1.5px;
+    }
+
+    .home .content p {
+    color: white;
+    font-size: 20px;
+    word-spacing: 2px;
+    }
+
+    .home .content .btn {
+    margin-top: 50px;
+    }
+
+    .home .content .btn a {
+    padding: 15px 10px 15px 10px;
+    font-size: 16px;
+    }
+
+    .protection_div .content .left {
+        padding: 24px 0px 24px 0px;
+        width: 60%;
+    }
+    .protection_div .content .left h4 {
+        font-size: 28px;
+    }
+    
+    .protection_div .content .left p {
+        font-size: 14px;
+        margin-top: 20px;
+    }
+    
+    .protection_div .content .left .btn {
+        margin-top: 50px;
+    }
+    .protection_div .content .left .btn a {
+        font-size: 14px;
+    }
+
+    .protection_div .content .right {
+        padding: 30px 0px ;
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+    }
+    
+    .protection_div .right .right_items {
+        padding: 12px;
+        margin: 6px;
+        width: 100%;
+    }
+    
+    .protection_div .right .right_items p {
+        font-size: 14px;
+        font-weight: 400;
+    }
+    
+    .protection_div .right .right_items p i {
+        margin-right: 10px;
+    }
+    
+    .our_farm .content .item {
+        width: 40%;
+        margin: 30px 5px 10px 5px;
+    }
+    
+    .our_farm .content .item i{
+        font-size: 40px;
+        margin-right: 12px;
+        color: green;
+    }
+
+    .bottom .content h2 {
+        margin-top: 50px;
+        font-size: 28px;
+    }
+    
+    .bottom .content p {
+        width: 80%;
+    }
+
+    .content .message_us {
+        width: 80%;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 30px;
+    }
+
+    .content .message_us input {
+        width: 50%;
+    }
+}
+
+/*medium deviced screen sized styling */
+
+/* lerger devices */
+@media (max-width: 767px) {
+
+    .header .top_nav .left li a {
+        font-size: 10px;
+    }
+
+    .header .top_nav .right i {
+        font-size: 12px;
+        margin-right: 6px;
+    }
+
+    .header .lower_nav {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        background-color: white;
+        height: 80px;
+    }
+    .header .lower_nav .logo {
+        background-image: url(images/logo.jpg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 60px;
+        width: 60px;
+        border-radius: 30px;
+        margin-left: 25px;
+    }
+    
+    .header .lower_nav .menu {
+        width: 80%;
+        margin-left: 0;
+    }
+    
+    .header .lower_nav .menu li {
+        list-style: none;
+        display: inline-block;
+        margin-right: 10px;
+        margin-left:8px;
+    }
+
+    .header .lower_nav .menu li a {
+        font-size: 12px;
+    }
+
+    .header .lower_nav .phone {
+        width: 100%;
+        height: 50px;
+    }
+    .header .lower_nav .phone a {
+        font-size: 20px;
+    }
+    .home .content h2, 
+    .home .content h3 {
+    font-size: 30px;
+    word-spacing: 1px;
+    }
+
+    .protection_div .content {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: space-around;
+    }
+    .protection_div .content .left {
+        padding: 24px 0px 24px 0px;
+        width: 80%;
+    }
+
+
+    .protection_div .content .right {
+        padding: 30px 0px ;
+        width: 80%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+    }
+    
+    .our_farm .content .item {
+        width: 100%;
+        margin: 30px 5px 10px 5px;
+    }
+    
+    .our_farm .content .item i{
+        font-size: 40px;
+        margin-right: 12px;
+        color: green;
+    }
+  
+    .bottom .content h2 {
+        margin-top: 50px;
+        font-size: 28px;
+    }
+    
+    .bottom .content p {
+        width: 90%;
+    }
+
+    .content .logo2 {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    .content .social_media, .content .contacts {
+        width: 50%;
+        margin-top: 30px;
+        text-align: center;
+    }
+    .content .message_us {
+        width: 80%;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 30px;
+        text-align: center;
+    }
+
+    .content .message_us input {
+        width: 80%;
+    }
+}
+
+/* small devices view  */
+@media (max-width: 600px) {
+
+    .header .lower_nav {
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+        flex-wrap: wrap;
+        height: fit-content;
+        
+    }
+
+    .header .lower_nav .logo{
+        position: fixed;
+        left: 0;
+    }
+
+    .header .lower_nav .menu-btn {
+        display: block;
+        height: 30px ;
+        width: 30px;
+        position: fixed;
+        right: 0;
+        margin-top: 16px;
+        margin-right: 10px;
+    }
+    
+    .header .lower_nav .menu-btn i {
+        font-size: 24px;
+    }
+
+    .header .lower_nav .menu {
+        top: 34px;
+        position: fixed;
+        left: -100%;
+        height: 330px;
+        background-color: white;
+        width: 100%;
+        transition: .7s;
+    }
+
+    .header .lower_nav .menu.active {
+        left: 0;
+    }
+    .header .lower_nav .menu li {
+        list-style: none;
+        display: block;
+        margin-top: 20px;
+        margin-right: auto;
+        margin-left: auto;
+        text-align: center;
+    }
+
+    .header .lower_nav .menu li a {
+        color: black;
+        font-size: 24px;
+    }
+
+    .header .lower_nav .phone {
+        width: 100%;
+        margin-top: 60px;
+    }
+
+    .home .content h2, 
+    .home .content h3 {
+    font-size: 24px;
+    }
+
+    .home .content p {
+        font-size: 18px;
+    }
+
+    .protection_div .content {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: space-around;
+    }
+    .protection_div .content .left {
+        padding: 24px 0px 24px 0px;
+        width: 100%;
+    }
+
+    .protection_div .content .right {
+        width: 100%;
+    }
+
+    .bottom .content h2 {
+        margin-top: 40px;
+        font-size: 24px;
+    }
+    
+    .bottom .content p {
+        width: 100%;
+        font-size: 16px;
+    }
+
+    .content .logo2 {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    .content .social_media, .content .contacts {
+        width: 100%;
+        margin-top: 30px 0 30px 0;
+        text-align: center;
+    }
+    .content .message_us {
+        width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 30px;
+        text-align: center;
+    }
+
+    .content .message_us input {
+        width: 80%;
+    }
+
+    .footer_div p {
+        font-size: 12px;
+    }
+}
